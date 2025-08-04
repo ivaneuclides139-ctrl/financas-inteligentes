@@ -1,143 +1,428 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <!-- Configuração básica -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- SEO -->
-    <title>Ganhar Dinheiro Online BR | Renda Extra, Investimentos e Marketing Digital</title>
-    <meta name="description" content="Aprenda como ganhar dinheiro online, criar renda extra e investir com segurança no Brasil. Dicas de marketing digital, renda passiva e empreendedorismo.">
-    <meta name="keywords" content="ganhar dinheiro online, renda extra, investir pouco, marketing digital, ChatGPT para ganhar dinheiro, renda passiva, trabalhar em casa, Brasil">
-
-    <!-- Open Graph (Facebook, WhatsApp) -->
-    <meta property="og:title" content="Ganhar Dinheiro Online BR | Renda Extra e Marketing Digital">
-    <meta property="og:description" content="Aprenda como ganhar dinheiro online, investir e criar renda extra no Brasil com estratégias comprovadas.">
-    <meta property="og:image" content="https://ganhardinheiroonlinebr.shop/images/og-image.jpg">
-    <meta property="og:url" content="https://ganhardinheiroonlinebr.shop">
-    <meta property="og:type" content="website">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Ganhar Dinheiro Online BR | Renda Extra e Marketing Digital">
-    <meta name="twitter:description" content="Aprenda como ganhar dinheiro online, investir e criar renda extra no Brasil com estratégias comprovadas.">
-    <meta name="twitter:image" content="https://ganhardinheiroonlinebr.shop/images/og-image.jpg">
-
-    <!-- Canonical -->
-    <link rel="canonical" href="https://ganhardinheiroonlinebr.shop">
-
-    <!-- Favicon -->
+    <meta name="description" content="Aprenda como ganhar dinheiro online com métodos comprovados. Renda extra, marketing digital e investimentos para iniciantes.">
+    <meta name="keywords" content="ganhar dinheiro online, renda extra, marketing digital, trabalhar em casa, investimentos online">
+    <title>Ganhar Dinheiro Online BR | Renda Extra e Marketing Digital</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
-
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#007BFF',
+                        secondary: '#FF9800',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #007BFF 0%, #00BFFF 100%);
+        }
+        .testimonial-card {
+            box-shadow: 0 10px 30px rgba(0, 123, 255, 0.1);
+        }
+        .article-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+    </style>
 </head>
-<body class="bg-gray-50 text-gray-900">
-
-    <!-- HEADER -->
-    <header class="bg-blue-600 text-white shadow-lg">
-        <div class="container mx-auto flex justify-between items-center p-4">
-            <h1 class="text-2xl font-bold">💰 GDO - Ganhar Dinheiro Online BR</h1>
-            <nav class="space-x-4">
-                <a href="#inicio" class="hover:underline">Início</a>
-                <a href="#sobre" class="hover:underline">Sobre</a>
-                <a href="#blog" class="hover:underline">Blog</a>
-                <a href="#loja" class="hover:underline">Loja</a>
-                <a href="#ferramentas" class="hover:underline">Ferramentas</a>
-                <a href="#contato" class="hover:underline">Contato</a>
+<body class="font-sans bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <a href="index.html" class="flex items-center">
+                    <span class="bg-primary text-white font-bold text-xl px-3 py-2 rounded mr-2">GDO</span>
+                    <span class="text-xl font-bold text-gray-800 hidden sm:inline">Ganhar Dinheiro Online</span>
+                </a>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-primary font-medium">Home</a>
+                <a href="sobre.html" class="text-gray-600 hover:text-primary">Sobre</a>
+                <a href="blog.html" class="text-gray-600 hover:text-primary">Blog</a>
+                <a href="loja.html" class="text-gray-600 hover:text-primary">Loja</a>
+                <a href="ferramentas.html" class="text-gray-600 hover:text-primary">Ferramentas</a>
+                <a href="contato.html" class="text-gray-600 hover:text-primary">Contato</a>
             </nav>
+            <button class="md:hidden text-gray-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
         </div>
     </header>
 
-    <!-- Google AdSense Topo -->
-    <div class="adsense bg-gray-200 text-center p-4 my-4">
-        <!-- Google AdSense Ad Slot - Topo -->
-        [Espaço para anúncio]
-    </div>
-
-    <!-- HERO SECTION -->
-    <section id="inicio" class="bg-white py-10">
-        <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold text-blue-600 mb-4">Ganhe Dinheiro Online no Brasil</h2>
-            <p class="text-lg mb-6">Descubra estratégias comprovadas para criar renda extra, trabalhar em casa e construir sua independência financeira na internet.</p>
-            <a href="#blog" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold">📚 Ver Artigos Gratuitos</a>
+    <!-- Hero Banner -->
+    <section class="hero-gradient text-white py-16 md:py-24">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-3xl md:text-5xl font-bold mb-6">Transforme seu conhecimento em renda online</h1>
+                <p class="text-xl mb-8">Aprenda métodos comprovados para ganhar dinheiro na internet, mesmo que você seja iniciante.</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#ebooks" class="bg-secondary hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg text-center transition duration-300">Ver E-books</a>
+                    <a href="#artigos" class="bg-white hover:bg-gray-100 text-primary font-bold py-3 px-6 rounded-lg text-center transition duration-300">Ler Artigos</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Pessoa trabalhando no computador" class="rounded-lg shadow-xl max-w-full h-auto">
+            </div>
         </div>
     </section>
 
-    <!-- Google AdSense Meio -->
-    <div class="adsense bg-gray-200 text-center p-4 my-4">
-        <!-- Google AdSense Ad Slot - Meio -->
-        [Espaço para anúncio]
+    <!-- AdSense Top Banner -->
+    <div class="container mx-auto px-4 py-6">
+        <div class="bg-gray-200 p-4 rounded-lg text-center">
+            <p class="text-gray-600">Espaço para anúncio</p>
+            <!-- AdSense Code Here -->
+            <div style="height: 90px; background-color: #f5f5f5; display: flex; align-items: center; justify-content: center;">
+                <p>Google AdSense Banner (728x90)</p>
+            </div>
+        </div>
     </div>
 
-    <!-- ARTIGOS EM DESTAQUE -->
-    <section id="blog" class="container mx-auto py-10">
-        <h3 class="text-3xl font-bold mb-6 text-center">📌 Artigos em Destaque</h3>
-        <div class="grid md:grid-cols-3 gap-6">
-
-            <article class="bg-white shadow rounded-lg overflow-hidden">
-                <img src="https://via.placeholder.com/400x200" alt="Como Ganhar Dinheiro com Inteligência Artificial" class="w-full">
-                <div class="p-4">
-                    <h4 class="font-bold text-lg mb-2">Como Ganhar Dinheiro com Inteligência Artificial</h4>
-                    <p class="text-sm mb-3">Estratégias práticas usando ChatGPT, MidJourney e automações para gerar renda online.</p>
-                    <a href="/artigos/ganhar-com-ia.html" class="text-blue-600 hover:underline">Ler Mais →</a>
+    <!-- Recent Articles -->
+    <section id="artigos" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Artigos Recentes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Article 1 -->
+                <div class="article-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1677442135136-760c813a743a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Inteligência Artificial" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-primary font-semibold text-sm mb-2">TECNOLOGIA</div>
+                        <h3 class="text-xl font-bold mb-3">Como Ganhar Dinheiro com Inteligência Artificial (IA)</h3>
+                        <p class="text-gray-600 mb-4">Descubra como aproveitar o boom da IA para criar fluxos de renda online com ferramentas acessíveis até para iniciantes.</p>
+                        <a href="artigos/ganhar-dinheiro-com-ia.html" class="text-primary font-medium inline-flex items-center">Ler mais 
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
-            </article>
-
-            <article class="bg-white shadow rounded-lg overflow-hidden">
-                <img src="https://via.placeholder.com/400x200" alt="Trabalhar em Casa pelo Celular" class="w-full">
-                <div class="p-4">
-                    <h4 class="font-bold text-lg mb-2">Trabalhar em Casa pelo Celular</h4>
-                    <p class="text-sm mb-3">Métodos reais para gerar renda pelo smartphone sem sair de casa.</p>
-                    <a href="/artigos/trabalho-celular.html" class="text-blue-600 hover:underline">Ler Mais →</a>
+                
+                <!-- Article 2 -->
+                <div class="article-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Trabalhar pelo celular" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-primary font-semibold text-sm mb-2">TRABALHO REMOTO</div>
+                        <h3 class="text-xl font-bold mb-3">Trabalhar em Casa pelo Celular</h3>
+                        <p class="text-gray-600 mb-4">Conheça 7 aplicativos que pagam para você trabalhar diretamente do seu smartphone, sem necessidade de computador.</p>
+                        <a href="artigos/trabalhar-em-casa-celular.html" class="text-primary font-medium inline-flex items-center">Ler mais 
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
-            </article>
-
-            <article class="bg-white shadow rounded-lg overflow-hidden">
-                <img src="https://via.placeholder.com/400x200" alt="Marketing de Afiliados para Iniciantes" class="w-full">
-                <div class="p-4">
-                    <h4 class="font-bold text-lg mb-2">Marketing de Afiliados para Iniciantes</h4>
-                    <p class="text-sm mb-3">Como começar do zero e ganhar comissões automáticas com marketing de afiliados.</p>
-                    <a href="/artigos/marketing-afiliados.html" class="text-blue-600 hover:underline">Ler Mais →</a>
+                
+                <!-- Article 3 -->
+                <div class="article-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Marketing de Afiliados" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-primary font-semibold text-sm mb-2">MARKETING DIGITAL</div>
+                        <h3 class="text-xl font-bold mb-3">Marketing de Afiliados para Iniciantes</h3>
+                        <p class="text-gray-600 mb-4">Guia completo para começar no marketing de afiliados e ganhar sua primeira comissão mesmo sem experiência prévia.</p>
+                        <a href="artigos/marketing-afiliados-iniciantes.html" class="text-primary font-medium inline-flex items-center">Ler mais 
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
-            </article>
-
+            </div>
+            <div class="text-center mt-10">
+                <a href="blog.html" class="inline-block bg-primary hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">Ver Todos os Artigos</a>
+            </div>
         </div>
     </section>
 
-    <!-- Google AdSense Rodapé -->
-    <div class="adsense bg-gray-200 text-center p-4 my-4">
-        <!-- Google AdSense Ad Slot - Rodapé -->
-        [Espaço para anúncio]
-    </div>
-
-    <!-- RODAPÉ -->
-    <footer class="bg-blue-600 text-white p-6 mt-10">
-        <div class="container mx-auto grid md:grid-cols-3 gap-6">
-            <div>
-                <h5 class="font-bold mb-2">Ganhar Dinheiro Online BR</h5>
-                <p class="text-sm">Sua fonte confiável para estratégias de renda online no Brasil.</p>
-            </div>
-            <div>
-                <h5 class="font-bold mb-2">Links Úteis</h5>
-                <ul class="text-sm space-y-1">
-                    <li><a href="#sobre" class="hover:underline">Sobre</a></li>
-                    <li><a href="#blog" class="hover:underline">Blog</a></li>
-                    <li><a href="#loja" class="hover:underline">Loja</a></li>
-                    <li><a href="#ferramentas" class="hover:underline">Ferramentas</a></li>
-                    <li><a href="/politica.html" class="hover:underline">Política de Privacidade</a></li>
-                    <li><a href="/termos.html" class="hover:underline">Termos de Uso</a></li>
-                </ul>
-            </div>
-            <div>
-                <h5 class="font-bold mb-2">Contato</h5>
-                <p class="text-sm">Email: contato@ganhardinheiroonlinebr.shop</p>
+    <!-- AdSense Middle Banner -->
+    <div class="container mx-auto px-4 py-6">
+        <div class="bg-gray-200 p-4 rounded-lg text-center">
+            <p class="text-gray-600">Espaço para anúncio</p>
+            <!-- AdSense Code Here -->
+            <div style="height: 250px; background-color: #f5f5f5; display: flex; align-items: center; justify-content: center;">
+                <p>Google AdSense Rectangle (300x250)</p>
             </div>
         </div>
-        <div class="text-center text-sm mt-6">
-            © 2025 Ganhar Dinheiro Online BR - Todos os direitos reservados.
+    </div>
+
+    <!-- Featured eBooks -->
+    <section id="ebooks" class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Nossos E-books Mais Vendidos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- eBook 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="E-book Renda Extra" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Guia Definitivo da Renda Extra</h3>
+                        <p class="text-gray-600 mb-4">52 métodos testados para ganhar dinheiro extra online e offline, mesmo com pouco tempo disponível.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-secondary font-bold text-xl">R$ 29,90</span>
+                            <a href="loja/guia-renda-extra.html" class="bg-primary hover:bg-blue-700 text-white font-medium py-2 px-4 rounded transition duration-300">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- eBook 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="E-book Afiliados" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Afiliado de Sucesso em 30 Dias</h3>
+                        <p class="text-gray-600 mb-4">Passo a passo para ganhar R$ 3.000/mês como afiliado mesmo sem audiência própria ou experiência.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-secondary font-bold text-xl">R$ 47,90</span>
+                            <a href="loja/afiliado-sucesso.html" class="bg-primary hover:bg-blue-700 text-white font-medium py-2 px-4 rounded transition duration-300">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- eBook 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="E-book Investimentos" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Investindo com Pouco Dinheiro</h3>
+                        <p class="text-gray-600 mb-4">Como começar a investir a partir de R$ 100 e construir riqueza a longo prazo com estratégias simples.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-secondary font-bold text-xl">R$ 37,90</span>
+                            <a href="loja/investindo-pouco.html" class="bg-primary hover:bg-blue-700 text-white font-medium py-2 px-4 rounded transition duration-300">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-10">
+                <a href="loja.html" class="inline-block bg-secondary hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300">Ver Todos os Produtos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Depoimentos de Quem Já Usou Nossos Métodos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-white text-gray-800 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Maria Silva" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Maria Silva</h4>
+                            <p class="text-gray-600 text-sm">São Paulo/SP</p>
+                        </div>
+                    </div>
+                    <p class="italic mb-4">"Com o método do marketing de afiliados que aprendi aqui, consegui substituir meu salário em apenas 5 meses. Hoje trabalho de casa e tenho mais tempo para minha família."</p>
+                    <div class="flex text-yellow-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-white text-gray-800 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Carlos Oliveira" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Carlos Oliveira</h4>
+                            <p class="text-gray-600 text-sm">Belo Horizonte/MG</p>
+                        </div>
+                    </div>
+                    <p class="italic mb-4">"O ebook sobre investimentos mudou minha vida financeira. Aprendi a investir meu dinheiro de forma inteligente e já consegui um retorno de 37% em 6 meses."</p>
+                    <div class="flex text-yellow-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-white text-gray-800 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Ana Santos" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Ana Santos</h4>
+                            <p class="text-gray-600 text-sm">Curitiba/PR</p>
+                        </div>
+                    </div>
+                    <p class="italic mb-4">"Depois de seguir as dicas do artigo sobre renda passiva, montei um pequeno negócio online que hoje me dá R$ 2.500/mês sem precisar trabalhar ativamente."</p>
+                    <div class="flex text-yellow-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-12 bg-secondary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Receba Dicas Exclusivas no Seu E-mail</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Inscreva-se para receber estratégias avançadas de ganhos online, promoções de nossos produtos e conteúdo exclusivo para assinantes.</p>
+            <form class="max-w-md mx-auto flex flex-col sm:flex-row gap-4">
+                <input type="email" placeholder="Seu melhor e-mail" class="flex-grow px-4 py-3 rounded-lg focus:outline-none text-gray-800">
+                <button type="submit" class="bg-primary hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">Quero Receber</button>
+            </form>
+            <p class="text-sm mt-4 opacity-80">Respeitamos sua privacidade. Nunca enviamos spam.</p>
+        </div>
+    </section>
+
+    <!-- AdSense Footer Banner -->
+    <div class="container mx-auto px-4 py-6">
+        <div class="bg-gray-200 p-4 rounded-lg text-center">
+            <p class="text-gray-600">Espaço para anúncio</p>
+            <!-- AdSense Code Here -->
+            <div style="height: 90px; background-color: #f5f5f5; display: flex; align-items: center; justify-content: center;">
+                <p>Google AdSense Banner (728x90)</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Ganhar Dinheiro Online</h3>
+                    <p class="text-gray-400">Ajudamos pessoas comuns a construírem renda extra e liberdade financeira através da internet.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Links Rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition">Blog</a></li>
+                        <li><a href="loja.html" class="text-gray-400 hover:text-white transition">Loja</a></li>
+                        <li><a href="ferramentas.html" class="text-gray-400 hover:text-white transition">Ferramentas</a></li>
+                        <li><a href="contato.html" class="text-gray-400 hover:text-white transition">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="politica-privacidade.html" class="text-gray-400 hover:text-white transition">Política de Privacidade</a></li>
+                        <li><a href="termos-uso.html" class="text-gray-400 hover:text-white transition">Termos de Uso</a></li>
+                        <li><a href="afiliados.html" class="text-gray-400 hover:text-white transition">Programa de Afiliados</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Redes Sociais</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2023 Ganhar Dinheiro Online BR. Todos os direitos reservados.</p>
+                <p class="mt-2 text-sm">Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook. Depois que você sair do Facebook, a responsabilidade não é deles e sim do nosso site.</p>
+            </div>
         </div>
     </footer>
 
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5511999999999" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.479 5.092 1.479 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.612-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+        </svg>
+    </a>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('button.md\\:hidden').addEventListener('click', function() {
+            const nav = document.querySelector('nav.md\\:flex');
+            nav.classList.toggle('hidden');
+            nav.classList.toggle('flex');
+            nav.classList.toggle('flex-col');
+            nav.classList.toggle('absolute');
+            nav.classList.toggle('top-16');
+            nav.classList.toggle('left-0');
+            nav.classList.toggle('right-0');
+            nav.classList.toggle('bg-white');
+            nav.classList.toggle('p-4');
+            nav.classList.toggle('shadow-md');
+            nav.classList.toggle('z-50');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
