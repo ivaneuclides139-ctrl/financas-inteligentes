@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós - GDO</title>
+    <meta name="description" content="Saiba mais sobre a missão e os valores do site GDO - Ganhar Dinheiro Online. Ajudamos pessoas a criar renda pela internet.">
+    <meta name="keywords" content="sobre ganhar dinheiro online, quem somos, missão, valores, GDO">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+<!-- Topo / Menu -->
+<header class="bg-blue-600 text-white p-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold">GDO</h1>
+    <nav class="space-x-4">
+        <a href="index.html" class="hover:underline">Home</a>
+        <a href="sobre.html" class="hover:underline font-bold">Sobre</a>
+        <a href="blog.html" class="hover:underline">Blog</a>
+        <a href="loja.html" class="hover:underline">Loja</a>
+        <a href="ferramentas.html" class="hover:underline">Ferramentas</a>
+        <a href="contato.html" class="hover:underline">Contato</a>
+    </nav>
+</header>
+
+<!-- Banner -->
+<section class="bg-blue-50 text-center py-16 px-6">
+    <h2 class="text-4xl font-bold mb-4">Sobre Nós</h2>
+    <p class="max-w-3xl mx-auto text-lg">Nossa missão é ajudar pessoas comuns a criarem renda online por meio de estratégias reais e comprovadas.</p>
+</section>
+
+<!-- Conteúdo -->
+<section class="py-12 px-6 max-w-4xl mx-auto space-y-8">
+    <div>
+        <h3 class="text-2xl font-bold mb-2">💡 Nossa Missão</h3>
+        <p>O <strong>GDO - Ganhar Dinheiro Online</strong> nasceu com o propósito de democratizar o acesso a informações e estratégias que realmente funcionam para gerar renda na internet. Nosso objetivo é capacitar qualquer pessoa, independentemente de sua experiência, a aproveitar as oportunidades do mundo digital.</p>
+    </div>
+
+    <div>
+        <h3 class="text-2xl font-bold mb-2">📌 Nossos Valores</h3>
+        <ul class="list-disc pl-6 space-y-2">
+            <li><strong>Transparência:</strong> compartilhamos apenas métodos e ferramentas que realmente testamos.</li>
+            <li><strong>Educação:</strong> acreditamos que o conhecimento é o maior ativo de quem deseja prosperar.</li>
+            <li><strong>Liberdade:</strong> queremos que nossos leitores alcancem independência financeira e geográfica.</li>
+        </ul>
+    </div>
+
+    <div>
+        <h3 class="text-2xl font-bold mb-2">📈 O que Fazemos</h3>
+        <p>Oferecemos artigos, cursos, eBooks e ferramentas exclusivas para ajudar você a criar múltiplas fontes de renda online. Nosso conteúdo é atualizado constantemente para refletir as tendências mais recentes do mercado digital.</p>
+    </div>
+
+    <div class="bg-blue-50 p-6 rounded-lg text-center">
+        <h3 class="text-2xl font-bold mb-4">🚀 Pronto para começar?</h3>
+        <p class="mb-4">Junte-se a milhares de leitores que já estão construindo sua renda online com nossas estratégias.</p>
+        <a href="loja.html" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold">Ver eBooks</a>
+    </div>
+</section>
+
+<!-- Rodapé -->
+<footer class="bg-blue-600 text-white p-6 mt-8">
+    <div class="grid md:grid-cols-3 gap-6">
+        <div>
+            <h3 class="font-bold text-lg mb-2">GDO - Ganhar Dinheiro Online</h3>
+            <p>Ajudamos pessoas comuns a construir renda online através de métodos comprovados.</p>
+        </div>
+        <div>
+            <h3 class="font-bold text-lg mb-2">Links Úteis</h3>
+            <ul>
+                <li><a href="sobre.html" class="hover:underline">Sobre Nós</a></li>
+                <li><a href="blog.html" class="hover:underline">Blog</a></li>
+                <li><a href="loja.html" class="hover:underline">Loja</a></li>
+                <li><a href="contato.html" class="hover:underline">Contato</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="font-bold text-lg mb-2">Legal</h3>
+            <ul>
+                <li><a href="privacy.html" class="hover:underline">Política de Privacidade</a></li>
+                <li><a href="terms.html" class="hover:underline">Termos de Uso</a></li>
+                <li><a href="cookies.html" class="hover:underline">Política de Cookies</a></li>
+            </ul>
+        </div>
+    </div>
+    <p class="text-center mt-6">&copy; 2025 Ganhar Dinheiro Online BR. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
