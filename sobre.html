@@ -8,83 +8,393 @@
     <meta name="keywords" content="sobre ganhar dinheiro online, quem somos, missão, valores, GDO">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            500: '#2563eb',
+                            600: '#1d4ed8',
+                        },
+                        secondary: {
+                            500: '#f97316',
+                            600: '#ea580c',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .mission-card:hover .mission-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+        .value-icon {
+            transition: all 0.3s ease;
+        }
+        .value-item:hover .value-icon {
+            transform: translateY(-5px);
+        }
+    </style>
 </head>
-<body class="bg-white text-gray-800 font-sans">
-
-<!-- Topo / Menu -->
-<header class="bg-blue-600 text-white p-4 flex justify-between items-center">
-    <h1 class="text-2xl font-bold">GDO</h1>
-    <nav class="space-x-4">
-        <a href="index.html" class="hover:underline">Home</a>
-        <a href="sobre.html" class="hover:underline font-bold">Sobre</a>
-        <a href="blog.html" class="hover:underline">Blog</a>
-        <a href="loja.html" class="hover:underline">Loja</a>
-        <a href="ferramentas.html" class="hover:underline">Ferramentas</a>
-        <a href="contato.html" class="hover:underline">Contato</a>
-    </nav>
-</header>
-
-<!-- Banner -->
-<section class="bg-blue-50 text-center py-16 px-6">
-    <h2 class="text-4xl font-bold mb-4">Sobre Nós</h2>
-    <p class="max-w-3xl mx-auto text-lg">Nossa missão é ajudar pessoas comuns a criarem renda online por meio de estratégias reais e comprovadas.</p>
-</section>
-
-<!-- Conteúdo -->
-<section class="py-12 px-6 max-w-4xl mx-auto space-y-8">
-    <div>
-        <h3 class="text-2xl font-bold mb-2">💡 Nossa Missão</h3>
-        <p>O <strong>GDO - Ganhar Dinheiro Online</strong> nasceu com o propósito de democratizar o acesso a informações e estratégias que realmente funcionam para gerar renda na internet. Nosso objetivo é capacitar qualquer pessoa, independentemente de sua experiência, a aproveitar as oportunidades do mundo digital.</p>
-    </div>
-
-    <div>
-        <h3 class="text-2xl font-bold mb-2">📌 Nossos Valores</h3>
-        <ul class="list-disc pl-6 space-y-2">
-            <li><strong>Transparência:</strong> compartilhamos apenas métodos e ferramentas que realmente testamos.</li>
-            <li><strong>Educação:</strong> acreditamos que o conhecimento é o maior ativo de quem deseja prosperar.</li>
-            <li><strong>Liberdade:</strong> queremos que nossos leitores alcancem independência financeira e geográfica.</li>
-        </ul>
-    </div>
-
-    <div>
-        <h3 class="text-2xl font-bold mb-2">📈 O que Fazemos</h3>
-        <p>Oferecemos artigos, cursos, eBooks e ferramentas exclusivas para ajudar você a criar múltiplas fontes de renda online. Nosso conteúdo é atualizado constantemente para refletir as tendências mais recentes do mercado digital.</p>
-    </div>
-
-    <div class="bg-blue-50 p-6 rounded-lg text-center">
-        <h3 class="text-2xl font-bold mb-4">🚀 Pronto para começar?</h3>
-        <p class="mb-4">Junte-se a milhares de leitores que já estão construindo sua renda online com nossas estratégias.</p>
-        <a href="loja.html" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold">Ver eBooks</a>
-    </div>
-</section>
-
-<!-- Rodapé -->
-<footer class="bg-blue-600 text-white p-6 mt-8">
-    <div class="grid md:grid-cols-3 gap-6">
-        <div>
-            <h3 class="font-bold text-lg mb-2">GDO - Ganhar Dinheiro Online</h3>
-            <p>Ajudamos pessoas comuns a construir renda online através de métodos comprovados.</p>
+<body class="bg-white text-gray-800 font-sans antialiased">
+    <!-- Topo / Menu -->
+    <header class="bg-primary-600 text-white sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-coins text-2xl text-secondary-500"></i>
+                <h1 class="text-2xl font-bold">GDO</h1>
+            </div>
+            
+            <!-- Mobile menu button -->
+            <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+            
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html" class="hover:text-secondary-500 transition">Home</a>
+                <a href="sobre.html" class="font-bold text-secondary-500 hover:text-secondary-600">Sobre</a>
+                <a href="blog.html" class="hover:text-secondary-500 transition">Blog</a>
+                <a href="loja.html" class="hover:text-secondary-500 transition">Loja</a>
+                <a href="ferramentas.html" class="hover:text-secondary-500 transition">Ferramentas</a>
+                <a href="contato.html" class="hover:text-secondary-500 transition">Contato</a>
+            </nav>
         </div>
-        <div>
-            <h3 class="font-bold text-lg mb-2">Links Úteis</h3>
-            <ul>
-                <li><a href="sobre.html" class="hover:underline">Sobre Nós</a></li>
-                <li><a href="blog.html" class="hover:underline">Blog</a></li>
-                <li><a href="loja.html" class="hover:underline">Loja</a></li>
-                <li><a href="contato.html" class="hover:underline">Contato</a></li>
-            </ul>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-primary-700 px-4 py-2">
+            <div class="flex flex-col space-y-3">
+                <a href="index.html" class="hover:text-secondary-500 transition">Home</a>
+                <a href="sobre.html" class="font-bold text-secondary-500">Sobre</a>
+                <a href="blog.html" class="hover:text-secondary-500 transition">Blog</a>
+                <a href="loja.html" class="hover:text-secondary-500 transition">Loja</a>
+                <a href="ferramentas.html" class="hover:text-secondary-500 transition">Ferramentas</a>
+                <a href="contato.html" class="hover:text-secondary-500 transition">Contato</a>
+            </div>
         </div>
-        <div>
-            <h3 class="font-bold text-lg mb-2">Legal</h3>
-            <ul>
-                <li><a href="privacy.html" class="hover:underline">Política de Privacidade</a></li>
-                <li><a href="terms.html" class="hover:underline">Termos de Uso</a></li>
-                <li><a href="cookies.html" class="hover:underline">Política de Cookies</a></li>
-            </ul>
-        </div>
-    </div>
-    <p class="text-center mt-6">&copy; 2025 Ganhar Dinheiro Online BR. Todos os direitos reservados.</p>
-</footer>
+    </header>
 
+    <!-- Banner Hero -->
+    <section class="relative bg-gradient-to-r from-primary-500 to-primary-600 text-white py-20 px-6">
+        <div class="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNwYXR0ZXJuKSIvPjwvc3ZnPg==')]"></div>
+        <div class="container mx-auto text-center relative z-10">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 animate-fadeIn">Sobre o GDO</h1>
+            <p class="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed">
+                Transformando vidas através da educação financeira digital
+            </p>
+            <div class="mt-8 flex justify-center space-x-4">
+                <a href="#nossa-historia" class="bg-secondary-500 hover:bg-secondary-600 px-6 py-3 rounded-lg font-semibold transition transform hover:scale-105 shadow-lg">
+                    Nossa História
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conteúdo Principal -->
+    <main class="container mx-auto px-4 py-12">
+        <!-- Nossa História -->
+        <section id="nossa-historia" class="mb-16 scroll-mt-20">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Equipe GDO trabalhando" 
+                         class="rounded-xl shadow-2xl w-full h-auto object-cover">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6 text-primary-600">Nossa História</h2>
+                    <p class="text-lg mb-4 leading-relaxed">
+                        O <strong class="text-primary-600">GDO - Ganhar Dinheiro Online</strong> nasceu em 2018 da visão de seu fundador, que identificou a necessidade de democratizar o conhecimento sobre renda digital no Brasil.
+                    </p>
+                    <p class="text-lg mb-4 leading-relaxed">
+                        Começamos como um pequeno blog compartilhando experiências pessoais e, ao longo dos anos, nos transformamos na principal referência em educação financeira digital do país.
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        Hoje, nossa plataforma atende mais de 500 mil pessoas mensalmente, com cursos, mentorias e ferramentas que realmente transformam vidas.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Missão, Visão e Valores -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-12 text-center text-primary-600">Nossos Pilares</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Missão -->
+                <div class="mission-card bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-secondary-500">
+                    <div class="mission-icon text-4xl mb-6 text-secondary-500 transition duration-300">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-primary-600">Missão</h3>
+                    <p class="text-gray-700">
+                        Capacitar pessoas a alcançarem liberdade financeira através de métodos digitais comprovados, com transparência e educação de qualidade.
+                    </p>
+                </div>
+                
+                <!-- Visão -->
+                <div class="mission-card bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-primary-500">
+                    <div class="mission-icon text-4xl mb-6 text-primary-500 transition duration-300">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-primary-600">Visão</h3>
+                    <p class="text-gray-700">
+                        Ser reconhecidos como a principal plataforma de transformação digital na América Latina até 2030.
+                    </p>
+                </div>
+                
+                <!-- Valores -->
+                <div class="mission-card bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-green-500">
+                    <div class="mission-icon text-4xl mb-6 text-green-500 transition duration-300">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-primary-600">Valores</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Integridade em tudo o que fazemos</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Paixão por transformar vidas</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Inovação constante</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nossos Valores Detalhados -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-12 text-center text-primary-600">Nossos Valores em Detalhe</h2>
+            
+            <div class="space-y-8">
+                <!-- Item 1 -->
+                <div class="value-item flex flex-col md:flex-row gap-6 bg-blue-50 p-6 rounded-xl">
+                    <div class="value-icon text-5xl text-secondary-500 md:w-1/12 flex justify-center">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="md:w-11/12">
+                        <h3 class="text-2xl font-bold mb-3 text-primary-600">Transparência Radical</h3>
+                        <p class="text-gray-700">
+                            Compartilhamos apenas métodos e ferramentas que realmente testamos e aprovamos. Nós mostramos números reais, incluindo nossos fracassos, porque acreditamos que o aprendizado vem da verdade.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Item 2 -->
+                <div class="value-item flex flex-col md:flex-row gap-6 bg-blue-50 p-6 rounded-xl">
+                    <div class="value-icon text-5xl text-primary-500 md:w-1/12 flex justify-center">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="md:w-11/12">
+                        <h3 class="text-2xl font-bold mb-3 text-primary-600">Educação Transformadora</h3>
+                        <p class="text-gray-700">
+                            Acreditamos que o conhecimento é o maior ativo de quem deseja prosperar. Por isso, investimos constantemente em conteúdo de alta qualidade, com abordagens práticas e atualizadas.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Item 3 -->
+                <div class="value-item flex flex-col md:flex-row gap-6 bg-blue-50 p-6 rounded-xl">
+                    <div class="value-icon text-5xl text-green-500 md:w-1/12 flex justify-center">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <div class="md:w-11/12">
+                        <h3 class="text-2xl font-bold mb-3 text-primary-600">Liberdade como Propósito</h3>
+                        <p class="text-gray-700">
+                            Queremos que nossos alunos alcancem independência financeira e geográfica. Acreditamos que o trabalho remoto e os negócios digitais são o futuro, e estamos aqui para guiar você nessa jornada.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Estatísticas -->
+        <section class="mb-16 bg-primary-600 text-white py-12 px-6 rounded-xl">
+            <h2 class="text-3xl font-bold mb-12 text-center">Nossos Números</h2>
+            
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div class="stat-item">
+                    <div class="text-4xl md:text-5xl font-bold mb-2 animate-count" data-target="500000">0</div>
+                    <p class="text-xl">Pessoas Impactadas</p>
+                </div>
+                <div class="stat-item">
+                    <div class="text-4xl md:text-5xl font-bold mb-2 animate-count" data-target="1200">0</div>
+                    <p class="text-xl">Artigos Publicados</p>
+                </div>
+                <div class="stat-item">
+                    <div class="text-4xl md:text-5xl font-bold mb-2 animate-count" data-target="35">0</div>
+                    <p class="text-xl">Cursos Criados</p>
+                </div>
+                <div class="stat-item">
+                    <div class="text-4xl md:text-5xl font-bold mb-2 animate-count" data-target="7">0</div>
+                    <p class="text-xl">Anos de Experiência</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="bg-gradient-to-r from-secondary-500 to-secondary-600 text-white rounded-xl p-8 md:p-12 text-center">
+            <h2 class="text-3xl font-bold mb-4">Pronto para Transformar Sua Vida?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">
+                Junte-se a milhares de pessoas que já estão construindo sua liberdade financeira com nossas estratégias comprovadas.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="loja.html" class="bg-white text-secondary-600 hover:bg-gray-100 px-8 py-4 rounded-lg font-bold text-lg transition transform hover:scale-105 shadow-lg">
+                    Ver Nossos Cursos
+                </a>
+                <a href="blog.html" class="bg-transparent border-2 border-white hover:bg-white hover:text-secondary-600 px-8 py-4 rounded-lg font-bold text-lg transition transform hover:scale-105">
+                    Ler Artigos Gratuitos
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-primary-700 text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <!-- Logo e Sobre -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-coins text-2xl text-secondary-500"></i>
+                        <h3 class="text-2xl font-bold">GDO</h3>
+                    </div>
+                    <p class="mb-4">
+                        Ajudamos pessoas comuns a construir renda online através de métodos comprovados e educação de qualidade.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-secondary-500 text-xl"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white hover:text-secondary-500 text-xl"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white hover:text-secondary-500 text-xl"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="text-white hover:text-secondary-500 text-xl"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Links Rápidos -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4 border-b border-primary-500 pb-2">Links Rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-secondary-500 transition">Home</a></li>
+                        <li><a href="sobre.html" class="hover:text-secondary-500 transition">Sobre Nós</a></li>
+                        <li><a href="blog.html" class="hover:text-secondary-500 transition">Blog</a></li>
+                        <li><a href="loja.html" class="hover:text-secondary-500 transition">Loja</a></li>
+                        <li><a href="ferramentas.html" class="hover:text-secondary-500 transition">Ferramentas</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Cursos Populares -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4 border-b border-primary-500 pb-2">Cursos Populares</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-secondary-500 transition">Afiliados de Sucesso</a></li>
+                        <li><a href="#" class="hover:text-secondary-500 transition">Copywriting que Vende</a></li>
+                        <li><a href="#" class="hover:text-secondary-500 transition">Tráfego Pago Dominado</a></li>
+                        <li><a href="#" class="hover:text-secondary-500 transition">SEO para Iniciantes</a></li>
+                        <li><a href="#" class="hover:text-secondary-500 transition">E-commerce do Zero</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Newsletter -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4 border-b border-primary-500 pb-2">Newsletter</h4>
+                    <p class="mb-4">
+                        Inscreva-se para receber dicas exclusivas e ofertas especiais.
+                    </p>
+                    <form class="flex">
+                        <input type="email" placeholder="Seu e-mail" class="px-4 py-2 rounded-l-lg text-gray-800 w-full focus:outline-none">
+                        <button type="submit" class="bg-secondary-500 hover:bg-secondary-600 px-4 py-2 rounded-r-lg font-semibold transition">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Direitos Autorais -->
+            <div class="border-t border-primary-600 pt-6 text-center text-sm text-primary-200">
+                <p>&copy; 2025 Ganhar Dinheiro Online BR. Todos os direitos reservados.</p>
+                <div class="mt-2 flex justify-center space-x-4">
+                    <a href="privacy.html" class="hover:text-white">Política de Privacidade</a>
+                    <a href="terms.html" class="hover:text-white">Termos de Uso</a>
+                    <a href="cookies.html" class="hover:text-white">Política de Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-secondary-500 text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Back to Top Button
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Animated Counter
+        const animateCounters = () => {
+            const counters = document.querySelectorAll('.animate-count');
+            const speed = 200;
+            
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+                const increment = target / speed;
+                
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + increment);
+                    setTimeout(animateCounters, 1);
+                } else {
+                    counter.innerText = target.toLocaleString();
+                }
+            });
+        };
+        
+        // Start counters when section is in view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        const statsSection = document.querySelector('.stat-item');
+        if (statsSection) {
+            observer.observe(statsSection);
+        }
+    </script>
 </body>
 </html>
