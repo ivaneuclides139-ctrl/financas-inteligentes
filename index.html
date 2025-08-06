@@ -1,354 +1,156 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <meta name="description" content="Aprenda como ganhar dinheiro online, trabalhar de casa e criar renda passiva. eBooks, cursos e ferramentas para seu sucesso financeiro." />
-    <meta name="keywords" content="ganhar dinheiro online, trabalhar de casa, marketing digital, renda passiva, investimentos" />
-    <title>GDO - Ganhar Dinheiro Online | Trabalhe de Casa e Crie Renda Passiva</title>
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNCIgZmlsbD0iIzAwN0JGRiIvPgo8dGV4dCB4PSI1IiB5PSIyMiIgZm9udC1mYW1pbHk9IkludGVyLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0id2hpdGUiPkdETzwvdGV4dD4KPC9zdmc+" />
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-    <!-- This is a replit script which adds a banner on the top of the page when opened in development mode outside the replit environment -->
-    <script type="text/javascript" src="https://replit.com/public/js/replit-dev-banner.js"></script>
-  </body>
-</html>
-<!DOCTYPE html>
-<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Aprenda como ganhar dinheiro online com métodos comprovados. Renda extra, marketing digital e investimentos para iniciantes.">
-    <meta name="keywords" content="ganhar dinheiro online, renda extra, marketing digital, investimentos, trabalho em casa, afiliados">
-    <meta name="author" content="Ganhar Dinheiro Online BR">
-    
-    <!-- Google / Search Engine Tags -->
-    <meta itemprop="name" content="Ganhar Dinheiro Online BR | Renda Extra e Marketing Digital">
-    <meta itemprop="description" content="Aprenda como ganhar dinheiro online com métodos comprovados. Renda extra, marketing digital e investimentos para iniciantes.">
-    <meta itemprop="image" content="https://exemplo.com/images/og-image.jpg">
-    
-    <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://exemplo.com">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Ganhar Dinheiro Online BR | Renda Extra e Marketing Digital">
-    <meta property="og:description" content="Aprenda como ganhar dinheiro online com métodos comprovados. Renda extra, marketing digital e investimentos para iniciantes.">
-    <meta property="og:image" content="https://exemplo.com/images/og-image.jpg">
-    
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Ganhar Dinheiro Online BR | Renda Extra e Marketing Digital">
-    <meta name="twitter:description" content="Aprenda como ganhar dinheiro online com métodos comprovados. Renda extra, marketing digital e investimentos para iniciantes.">
-    <meta name="twitter:image" content="https://exemplo.com/images/og-image.jpg">
-    
-    <title>Ganhar Dinheiro Online BR | Renda Extra e Marketing Digital</title>
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <title>Ganhe Dinheiro Online - eBooks Exclusivos</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        .hero-gradient {
-            background: linear-gradient(135deg, #007BFF 0%, #00D4FF 100%);
+        .countdown-box {
+            background: linear-gradient(135deg, #f97316, #ef4444);
+            animation: pulse 2s infinite;
         }
-        .feature-card:hover {
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .book-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
         }
         .testimonial-card {
-            background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-        }
-        .ebook-card:hover .ebook-overlay {
-            opacity: 1;
-        }
-        .ebook-overlay {
             transition: all 0.3s ease;
-            opacity: 0;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-3px);
         }
     </style>
 </head>
 <body class="font-sans bg-gray-50">
-    <!-- Header/Navigation -->
-    <header class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="flex items-center">
-                <a href="index.html" class="flex items-center">
-                    <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center mr-2">
-                        <span class="text-white font-bold text-lg">GDO</span>
-                    </div>
-                    <span class="text-xl font-bold text-blue-600 hidden sm:block">Ganhar Dinheiro Online</span>
-                </a>
+    <!-- Hero Section -->
+    <header class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 animate-bounce">💰 Comece a Ganhar Dinheiro Online Hoje Mesmo</h1>
+            <p class="text-xl md:text-2xl mb-8">Transforme seu tempo livre em lucro real com nossos guias práticos e comprovados.</p>
+            
+            <div class="flex flex-wrap justify-center items-center gap-4 mb-8">
+                <span class="flex items-center bg-green-100 text-green-800 px-3 py-1 rounded-full"><i class="fas fa-users mr-2"></i> +12.437 pessoas já transformaram suas vidas</span>
+                <span class="flex items-center bg-red-100 text-red-800 px-3 py-1 rounded-full"><i class="fas fa-fire mr-2"></i> ÚLTIMAS 37 VAGAS COM DESCONTO</span>
+                <span class="flex items-center bg-blue-100 text-blue-800 px-3 py-1 rounded-full"><i class="fas fa-bolt mr-2"></i> ACESSO IMEDIATO</span>
             </div>
             
-            <nav class="hidden md:flex space-x-8">
-                <a href="index.html" class="text-blue-600 font-medium">Home</a>
-                <a href="sobre.html" class="text-gray-700 hover:text-blue-600 transition">Sobre</a>
-                <a href="blog.html" class="text-gray-700 hover:text-blue-600 transition">Blog</a>
-                <a href="loja.html" class="text-gray-700 hover:text-blue-600 transition">Loja</a>
-                <a href="ferramentas.html" class="text-gray-700 hover:text-blue-600 transition">Ferramentas</a>
-                <a href="contato.html" class="text-gray-700 hover:text-blue-600 transition">Contato</a>
-            </nav>
+            <div class="countdown-box inline-block px-6 py-3 rounded-lg mb-8">
+                <div class="text-xl font-bold">
+                      ⚠️ OFERTA RELÂMPAGO: Termina em <span id="countdown" class="text-white">01:59:34</span>
+                </div>
+                <p class="text-sm mt-2">Promoção válida apenas para as primeiras 100 compras desta semana</p>
+            </div>
             
-            <div class="flex items-center space-x-4">
-                <button id="mobile-menu-button" class="md:hidden text-gray-700">
-                    <i class="fas fa-bars text-2xl"></i>
-                </button>
-            </div>
-        </div>
-        
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
-            <div class="container mx-auto px-4 py-3 flex flex-col space-y-3">
-                <a href="index.html" class="text-blue-600 font-medium py-2">Home</a>
-                <a href="sobre.html" class="text-gray-700 py-2">Sobre</a>
-                <a href="blog.html" class="text-gray-700 py-2">Blog</a>
-                <a href="loja.html" class="text-gray-700 py-2">Loja</a>
-                <a href="ferramentas.html" class="text-gray-700 py-2">Ferramentas</a>
-                <a href="contato.html" class="text-gray-700 py-2">Contato</a>
-            </div>
+            <a href="#ebooks" class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-4 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105 inline-block">
+                <i class="fas fa-arrow-down mr-2"></i> Ver Ofertas Exclusivas
+            </a>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero-gradient text-white py-16 md:py-24">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2 mb-10 md:mb-0">
-                    <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Transforme seu conhecimento em renda online</h1>
-                    <p class="text-lg md:text-xl mb-8 opacity-90">Aprenda métodos comprovados para ganhar dinheiro na internet, mesmo que você seja iniciante.</p>
-                    <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
-                        <a href="#ebooks" class="bg-white text-blue-600 hover:bg-gray-100 px-6 py-3 rounded-md font-bold text-center transition">Ver E-books</a>
-                        <a href="#artigos" class="bg-transparent border-2 border-white hover:bg-white hover:text-blue-600 px-6 py-3 rounded-md font-bold text-center transition">Ler Artigos</a>
-                    </div>
-                </div>
-                <div class="md:w-1/2 flex justify-center">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
-                         alt="Pessoa trabalhando no computador ganhando dinheiro online" 
-                         class="rounded-lg shadow-xl w-full max-w-md">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- AdSense Top Banner -->
-    <div class="bg-gray-100 py-4">
-        <div class="container mx-auto px-4">
-            <div class="bg-gray-200 h-20 md:h-28 flex items-center justify-center rounded">
-                <span class="text-gray-500">Anúncio Google AdSense</span>
-            </div>
-        </div>
-    </div>
-
-    <!-- Features Section -->
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">Como podemos te ajudar?</h2>
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <!-- Section 1 - eBooks -->
+        <section id="ebooks" class="mb-16">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Nossos eBooks Exclusivos</h2>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="feature-card bg-white p-6 rounded-lg shadow-md transition duration-300">
-                    <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                        <i class="fas fa-laptop-code text-blue-600 text-2xl"></i>
+                <!-- eBook 1 -->
+                <div class="book-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-300">
+                    <div class="bg-blue-500 p-4 text-white text-center">
+                        <h3 class="text-xl font-bold">1️⃣ Renda Passiva na Internet</h3>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Trabalhe de Casa</h3>
-                    <p class="text-gray-600">Aprenda métodos comprovados para trabalhar remotamente e ter flexibilidade de horários.</p>
-                </div>
-                
-                <div class="feature-card bg-white p-6 rounded-lg shadow-md transition duration-300">
-                    <div class="w-14 h-14 bg-orange-100 rounded-full flex items-center justify-center mb-4">
-                        <i class="fas fa-chart-line text-orange-600 text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Marketing Digital</h3>
-                    <p class="text-gray-600">Domine as estratégias de marketing digital para promover produtos e serviços online.</p>
-                </div>
-                
-                <div class="feature-card bg-white p-6 rounded-lg shadow-md transition duration-300">
-                    <div class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mb-4">
-                        <i class="fas fa-money-bill-wave text-green-600 text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Investimentos</h3>
-                    <p class="text-gray-600">Descubra como investir seu dinheiro de forma inteligente, mesmo começando com pouco.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Recent Articles -->
-    <section id="artigos" class="py-16 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <div class="flex justify-between items-center mb-10">
-                <h2 class="text-3xl font-bold">Artigos Recentes</h2>
-                <a href="blog.html" class="text-blue-600 font-medium hover:underline">Ver todos</a>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Article 1 -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
-                    <img src="https://images.unsplash.com/photo-1677442136013-0c8120c802a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
-                         alt="Inteligência Artificial" 
-                         class="w-full h-48 object-cover">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Renda Passiva" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <span class="text-sm text-blue-600 font-medium">TECNOLOGIA</span>
-                        <h3 class="text-xl font-bold mt-2 mb-3">Como Ganhar Dinheiro com Inteligência Artificial (IA)</h3>
-                        <p class="text-gray-600 mb-4">Descubra as melhores oportunidades para monetizar usando ferramentas de IA em 2023.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-sm text-gray-500"><i class="far fa-eye mr-1"></i> 2.4K visualizações</span>
-                            <a href="artigo-ia.html" class="text-blue-600 font-medium hover:underline">Ler mais</a>
+                        <p class="text-gray-700 mb-4">Aprenda a criar fontes de renda automáticas que continuam gerando dinheiro todos os dias, mesmo enquanto você dorme.</p>
+                        <ul class="text-sm text-gray-600 mb-4 space-y-2">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> 5 métodos testados para renda passiva</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Ferramentas gratuitas para começar hoje</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Casos reais de alunos que aplicaram</li>
+                        </ul>
+                        <div class="mb-4">
+                            <span class="text-gray-500 line-through">R$ 69,90</span>
+                            <span class="text-2xl font-bold text-green-600 ml-2">R$ 27,00</span>
                         </div>
-                    </div>
-                </div>
-                
-                <!-- Article 2 -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
-                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
-                         alt="Trabalhar pelo celular" 
-                         class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <span class="text-sm text-orange-600 font-medium">RENDA EXTRA</span>
-                        <h3 class="text-xl font-bold mt-2 mb-3">Trabalhar em Casa pelo Celular</h3>
-                        <p class="text-gray-600 mb-4">10 aplicativos que pagam para você trabalhar diretamente do seu smartphone.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-sm text-gray-500"><i class="far fa-eye mr-1"></i> 3.1K visualizações</span>
-                            <a href="artigo-celular.html" class="text-blue-600 font-medium hover:underline">Ler mais</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Article 3 -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
-                    <img src="https://images.unsplash.com/photo-1600880292203-75771f047854?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
-                         alt="Marketing de Afiliados" 
-                         class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <span class="text-sm text-green-600 font-medium">MARKETING</span>
-                        <h3 class="text-xl font-bold mt-2 mb-3">Marketing de Afiliados para Iniciantes</h3>
-                        <p class="text-gray-600 mb-4">Guia completo para começar a ganhar comissões vendendo produtos de outras empresas.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-sm text-gray-500"><i class="far fa-eye mr-1"></i> 4.7K visualizações</span>
-                            <a href="artigo-afiliados.html" class="text-blue-600 font-medium hover:underline">Ler mais</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- AdSense Middle Banner -->
-    <div class="bg-gray-100 py-4">
-        <div class="container mx-auto px-4">
-            <div class="bg-gray-200 h-20 md:h-28 flex items-center justify-center rounded">
-                <span class="text-gray-500">Anúncio Google AdSense</span>
-            </div>
-        </div>
-    </div>
-
-    <!-- E-books Section -->
-    <section id="ebooks" class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-4">Nossos E-books Mais Vendidos</h2>
-            <p class="text-gray-600 text-center max-w-2xl mx-auto mb-10">Conhecimento prático para você aplicar hoje mesmo e começar a ver resultados.</p>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- E-book 1 -->
-                <div class="ebook-card bg-white rounded-lg overflow-hidden shadow-md relative">
-                    <div class="relative">
-                        <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" 
-                             alt="Capa do E-book Renda Passiva" 
-                             class="w-full h-64 object-cover">
-                        <div class="ebook-overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-                            <a href="#" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-md font-bold">Comprar Agora</a>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Renda Passiva na Internet</h3>
-                        <p class="text-gray-600 mb-4">Aprenda a criar fontes de renda que trabalham para você enquanto dorme.</p>
-                        <div class="flex justify-between items-center">
-                            <div>
-                                <span class="text-orange-500 font-bold text-xl">R$ 47,90</span>
-                                <span class="line-through text-gray-400 ml-2">R$ 97,90</span>
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300 transform hover:scale-105 relative">
+                            <i class="fas fa-bolt mr-2"></i> QUERO MINHA RENDA PASSIVA AGORA!
+                            <div class="flex justify-center mt-2 space-x-2">
+                                <img src="https://cdn-icons-png.flaticon.com/512/196/196578.png" alt="SSL" class="h-5">
+                                <img src="https://cdn-icons-png.flaticon.com/512/217/217853.png" alt="PagSeguro" class="h-5">
+                                <img src="https://cdn-icons-png.flaticon.com/512/196/196566.png" alt="7 dias garantia" class="h-5">
                             </div>
-                            <span class="text-sm text-gray-500"><i class="far fa-eye mr-1"></i> 8.5K visualizações</span>
-                        </div>
-                    </div>
-                    <div class="absolute top-4 left-4 bg-blue-600 text-white text-xs font-bold px-2 py-1 rounded">
-                        MAIS VENDIDO
+                        </button>
+                        <p class="text-xs text-center mt-2 text-gray-500">⚠️ Apenas 12 cópias disponíveis neste preço</p>
                     </div>
                 </div>
                 
-                <!-- E-book 2 -->
-                <div class="ebook-card bg-white rounded-lg overflow-hidden shadow-md relative">
-                    <div class="relative">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
-                             alt="Capa do E-book Afiliados" 
-                             class="w-full h-64 object-cover">
-                        <div class="ebook-overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-                            <a href="#" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-md font-bold">Comprar Agora</a>
-                        </div>
+                <!-- eBook 2 -->
+                <div class="book-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-300">
+                    <div class="bg-red-500 p-4 text-white text-center">
+                        <h3 class="text-xl font-bold">2️⃣ 10 Formas de Ganhar Dinheiro no YouTube Sem Aparecer</h3>
                     </div>
+                    <img src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="YouTube sem aparecer" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Afiliado de Sucesso</h3>
-                        <p class="text-gray-600 mb-4">O método passo a passo para ganhar R$ 5.000/mês como afiliado mesmo começando do zero.</p>
-                        <div class="flex justify-between items-center">
-                            <div>
-                                <span class="text-orange-500 font-bold text-xl">R$ 37,90</span>
-                                <span class="line-through text-gray-400 ml-2">R$ 67,90</span>
-                            </div>
-                            <span class="text-sm text-gray-500"><i class="far fa-eye mr-1"></i> 6.2K visualizações</span>
+                        <p class="text-gray-700 mb-4">Estratégias testadas para criar canais lucrativos sem mostrar o rosto. Descubra nichos rentáveis, técnicas de crescimento rápido e como monetizar mesmo sem aparecer.</p>
+                        <div class="mb-4">
+                            <span class="text-gray-500 line-through">R$ 59,90</span>
+                            <span class="text-2xl font-bold text-green-600 ml-2">R$ 22,90</span>
                         </div>
+                        <button class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
+                            <i class="fas fa-bolt mr-2"></i> QUERO MEU CANAL LUCRATIVO AGORA! ✅
+                        </button>
                     </div>
                 </div>
                 
-                <!-- E-book 3 -->
-                <div class="ebook-card bg-white rounded-lg overflow-hidden shadow-md relative">
-                    <div class="relative">
-                        <img src="https://images.unsplash.com/photo-1454165804606-c3aa57c482c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1473&q=80" 
-                             alt="Capa do E-book Investimentos" 
-                             class="w-full h-64 object-cover">
-                        <div class="ebook-overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-                            <a href="#" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-md font-bold">Comprar Agora</a>
-                        </div>
+                <!-- eBook 3 -->
+                <div class="book-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-300">
+                    <div class="bg-purple-500 p-4 text-white text-center">
+                        <h3 class="text-xl font-bold">3️⃣ Marketing de Afiliados para Iniciantes</h3>
                     </div>
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Marketing de Afiliados" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Investindo com Pouco Dinheiro</h3>
-                        <p class="text-gray-600 mb-4">Como multiplicar seu capital começando com menos de R$ 100 e alcançar a liberdade financeira.</p>
-                        <div class="flex justify-between items-center">
-                            <div>
-                                <span class="text-orange-500 font-bold text-xl">R$ 29,90</span>
-                                <span class="line-through text-gray-400 ml-2">R$ 49,90</span>
-                            </div>
-                            <span class="text-sm text-gray-500"><i class="far fa-eye mr-1"></i> 4.8K visualizações</span>
+                        <p class="text-gray-700 mb-4">Guia rápido e objetivo para faturar comissões todos os dias divulgando produtos na internet. Comece sem experiência, sem estoque e com investimento zero.</p>
+                        <div class="mb-4">
+                            <span class="text-gray-500 line-through">R$ 49,90</span>
+                            <span class="text-2xl font-bold text-green-600 ml-2">R$ 18,90</span>
                         </div>
+                        <button class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
+                            <i class="fas fa-bolt mr-2"></i> QUERO MINHA PRIMEIRA COMISSÃO AGORA! ✅
+                        </button>
                     </div>
                 </div>
             </div>
             
-            <div class="text-center mt-10">
-                <a href="loja.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-bold transition">Ver Todos os Produtos</a>
+            <!-- Bundle Offer -->
+            <div class="mt-12 bg-gradient-to-r from-green-500 to-teal-500 rounded-xl p-6 text-center text-white">
+                <h3 class="text-2xl font-bold mb-2">💥 Pacote Completo (3 eBooks + Bônus no valor de R$ 211)</h3>
+                <div class="mb-4">
+                    <span class="text-gray-200 line-through">R$ 179,70</span>
+                    <span class="text-3xl font-bold ml-2">R$ 49,90</span>
+                    <span class="block">(economize R$ 18,90)</span>
+                </div>
+                <button class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-4 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105">
+                    <i class="fas fa-gem mr-2"></i> Quero Todos Agora!
+                </button>
             </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="py-16 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">O que nossos alunos dizem</h2>
+        </section>
+        
+        <!-- Section 2 - Testimonials -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Depoimentos de Quem Já Comprou</h2>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Testimonial 1 -->
-                <div class="testimonial-card p-6 rounded-lg">
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-500">
                     <div class="flex items-center mb-4">
-                        <img src="https://randomuser.me/api/portraits/women/32.jpg" 
-                             alt="Depoimento de Carla Santos" 
-                             class="w-12 h-12 rounded-full object-cover mr-4">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&h=200&q=80" alt="Maria Silva" class="w-12 h-12 rounded-full object-cover mr-4">
                         <div>
-                            <h4 class="font-bold">Carla Santos</h4>
+                            <h4 class="font-bold">Maria Silva</h4>
                             <div class="flex text-yellow-400">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -358,189 +160,251 @@
                             </div>
                         </div>
                     </div>
-                    <p class="text-gray-600 mb-4">"Comprei o ebook de renda passiva e em 3 meses já estava ganhando R$ 1.200 por mês sem fazer quase nada. Mudou minha vida!"</p>
-                    <div class="flex items-center text-sm text-gray-500">
-                        <i class="fas fa-book mr-2"></i>
-                        <span>E-book Renda Passiva na Internet</span>
+                    <p class="text-gray-700 italic">"Em 3 meses aplicando as estratégias, criei minha primeira fonte de renda passiva e hoje ganho R$ 2.500 por mês trabalhando de casa."</p>
+                </div>
+                
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md border-l-4 border-red-500">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Carlos Ferreira" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold">Carlos Ferreira</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"Os eBooks são diretos ao ponto! Consegui triplicar minha renda em 6 meses com o YouTube sem aparecer."</p>
+                </div>
+                
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md border-l-4 border-purple-500">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Ana Lima" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold">Ana Lima</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"Nunca imaginei que fosse possível ganhar dinheiro tão rápido na internet. Conteúdo claro, prático e que funciona."</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section 3 - Bonuses -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Bônus Exclusivos</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-yellow-400 text-center">
+                    <div class="bg-yellow-100 text-yellow-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-file-excel text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">🎁 Bônus 1: Planilha de Controle Financeiro Premium (R$ 97)</h3>
+                    <p class="text-gray-600">Planilha profissional que já ajudou +3.200 alunos a organizarem suas finanças.</p>
+                    <div class="bg-yellow-50 text-yellow-800 text-sm p-2 rounded mt-2">
+                        <i class="fas fa-exclamation-circle mr-1"></i> Disponível apenas para compras feitas até meia-noite
                     </div>
                 </div>
                 
-                <!-- Testimonial 2 -->
-                <div class="testimonial-card p-6 rounded-lg">
-                    <div class="flex items-center mb-4">
-                        <img src="https://randomuser.me/api/portraits/men/45.jpg" 
-                             alt="Depoimento de Ricardo Oliveira" 
-                             class="w-12 h-12 rounded-full object-cover mr-4">
-                        <div>
-                            <h4 class="font-bold">Ricardo Oliveira</h4>
-                            <div class="flex text-yellow-400">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-green-400 text-center">
+                    <div class="bg-green-100 text-green-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-lightbulb text-2xl"></i>
                     </div>
-                    <p class="text-gray-600 mb-4">"O curso de afiliados me mostrou exatamente o que fazer. No primeiro mês já fiz R$ 800 e hoje minha média é R$ 3.500/mês."</p>
-                    <div class="flex items-center text-sm text-gray-500">
-                        <i class="fas fa-book mr-2"></i>
-                        <span>E-book Afiliado de Sucesso</span>
-                    </div>
+                    <h3 class="font-bold text-xl mb-2">🎁 Bônus 2: Lista de 50 ideias de renda extra (R$ 47)</h3>
+                    <p class="text-gray-600">Ideias testadas e aprovadas para você começar hoje mesmo.</p>
                 </div>
                 
-                <!-- Testimonial 3 -->
-                <div class="testimonial-card p-6 rounded-lg">
-                    <div class="flex items-center mb-4">
-                        <img src="https://randomuser.me/api/portraits/women/68.jpg" 
-                             alt="Depoimento de Ana Paula Costa" 
-                             class="w-12 h-12 rounded-full object-cover mr-4">
-                        <div>
-                            <h4 class="font-bold">Ana Paula Costa</h4>
-                            <div class="flex text-yellow-400">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                        </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-blue-400 text-center">
+                    <div class="bg-blue-100 text-blue-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-video text-2xl"></i>
                     </div>
-                    <p class="text-gray-600 mb-4">"Depois de ler o ebook de investimentos, comecei com R$ 100 e em 6 meses já tinha R$ 1.200. Agora consigo investir todo mês."</p>
-                    <div class="flex items-center text-sm text-gray-500">
-                        <i class="fas fa-book mr-2"></i>
-                        <span>E-book Investindo com Pouco Dinheiro</span>
+                    <h3 class="font-bold text-xl mb-2">🎁 Bônus 3: Vídeo-aula "Primeiros Passos" (R$ 67)</h3>
+                    <p class="text-gray-600">(Enviados automaticamente no e-mail após a compra)</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Mid-Page CTA -->
+        <section class="mb-8 bg-gradient-to-r from-orange-500 to-red-500 text-white text-center py-8 px-4 rounded-xl">
+            <h3 class="text-2xl font-bold mb-4">🚨 ATENÇÃO: Você está prestes a perder esta oportunidade!</h3>
+            <p class="text-xl mb-6">A cada 10 minutos, 3 pessoas compram este pacote. As vagas com desconto estão acabando!</p>
+            <a href="#ebooks" class="bg-white hover:bg-gray-100 text-orange-600 font-bold py-4 px-8 rounded-full text-lg inline-block transition duration-300 transform hover:scale-105">
+                <i class="fas fa-gem mr-2"></i> GARANTIR MEU ACESSO AGORA
+            </a>
+            <p class="text-sm mt-4 opacity-80">Restam apenas 14 vagas com desconto</p>
+        </section>
+
+        <!-- Section 4 - Guarantee -->
+        <section class="mb-16 bg-white rounded-xl shadow-lg overflow-hidden">
+            <div class="md:flex">
+                <div class="md:w-1/3 bg-green-600 text-white p-8 flex items-center justify-center">
+                    <div class="text-center">
+                        <i class="fas fa-shield-alt text-5xl mb-4"></i>
+                        <h3 class="text-2xl font-bold">Garantia Incondicional</h3>
+                    </div>
+                </div>
+                <div class="md:w-2/3 p-8">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Garantia 100% Sem Risco</h3>
+                    <p class="text-gray-700 mb-4">7 dias para testar todo o conteúdo. Se não valer cada centavo, basta um e-mail e devolvemos seu dinheiro imediatamente - sem questionamentos.</p>
+                    <div class="flex items-center text-green-600">
+                        <i class="fas fa-check-circle text-2xl mr-2"></i>
+                        <span class="font-bold">Sem risco para você</span>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="py-16 bg-blue-600 text-white">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-4">Pronto para transformar sua vida financeira?</h2>
-            <p class="text-xl opacity-90 mb-8 max-w-2xl mx-auto">Junte-se a mais de 10.000 alunos que já estão ganhando dinheiro online com nossos métodos.</p>
-            <a href="loja.html" class="inline-block bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 rounded-md font-bold text-lg transition">Começar Agora</a>
-        </div>
-    </section>
-
-    <!-- AdSense Bottom Banner -->
-    <div class="bg-gray-100 py-4">
-        <div class="container mx-auto px-4">
-            <div class="bg-gray-200 h-20 md:h-28 flex items-center justify-center rounded">
-                <span class="text-gray-500">Anúncio Google AdSense</span>
+        </section>
+        
+        <!-- Section 5 - Final CTA -->
+        <section class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">📢 Não adie mais seus resultados!</h2>
+            <p class="text-xl text-gray-700 mb-8">O desconto e os bônus são por tempo limitado e podem expirar a qualquer momento.</p>
+            
+            <div class="flex flex-wrap justify-center gap-4 mb-8">
+                <span class="flex items-center"><i class="fas fa-lock mr-2"></i>  💳 Compra segura</span>
+                <span class="flex items-center"><i class="fas fa-bolt mr-2"></i> 📲 Receba na hora</span>
+                <span class="flex items-center"><i class="fas fa-book-open mr-2"></i>  📚 Leitura prática</span>
             </div>
-        </div>
-    </div>
+            
+            <div class="bg-red-600 text-white p-4 rounded-lg mb-8 max-w-2xl mx-auto">
+                <p class="font-bold text-center">⚠️ ALERTA: Esta página será atualizada em <span id="countdown2">01:59:34</span> com novos preços</p>
+            </div>
+            <a href="#ebooks" class="bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white font-bold py-5 px-12 rounded-full text-xl inline-block transition duration-300 transform hover:scale-105 shadow-lg animate-pulse">
+                <i class="fas fa-lock mr-2"></i> SIM! QUERO MEU ACESSO IMEDIATO
+            </a>
+            <p class="text-sm mt-4 text-gray-600">✅ 100% seguro |  ⚡ Entrega instantânea |  🔒 Garantia blindada</p>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white pt-12 pb-6">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-                <div>
-                    <div class="flex items-center mb-4">
-                        <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center mr-2">
-                            <span class="text-white font-bold text-lg">GDO</span>
-                        </div>
-                        <span class="text-xl font-bold">Ganhar Dinheiro Online</span>
-                    </div>
-                    <p class="text-gray-400">Ajudamos pessoas comuns a construir renda online através de métodos comprovados.</p>
+    <footer class="bg-gray-800 text-white py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-8">
+                <h2 class="text-2xl font-bold mb-2">Ganhar Dinheiro Online</h2>
+                <p class="text-gray-300">Sua fonte confiável para conquistar liberdade financeira.</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <a href="mailto:contato@ganhardinheiroonline.com" class="hover:text-yellow-400 transition">
+                        <i class="fas fa-envelope mr-2"></i> contato@ganhardinheiroonline.com
+                    </a>
                 </div>
                 
-                <div>
-                    <h3 class="text-lg font-bold mb-4">Links Úteis</h3>
-                    <ul class="space-y-2">
-                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
-                        <li><a href="sobre.html" class="text-gray-400 hover:text-white transition">Sobre Nós</a></li>
-                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition">Blog</a></li>
-                        <li><a href="loja.html" class="text-gray-400 hover:text-white transition">Loja</a></li>
-                        <li><a href="contato.html" class="text-gray-400 hover:text-white transition">Contato</a></li>
-                    </ul>
+                <div class="flex space-x-6 mb-4 md:mb-0">
+                    <a href="#" class="hover:text-yellow-400 transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-yellow-400 transition"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-yellow-400 transition"><i class="fab fa-youtube"></i></a>
                 </div>
                 
-                <div>
-                    <h3 class="text-lg font-bold mb-4">Legal</h3>
-                    <ul class="space-y-2">
-                        <li><a href="politica-privacidade.html" class="text-gray-400 hover:text-white transition">Política de Privacidade</a></li>
-                        <li><a href="termos-uso.html" class="text-gray-400 hover:text-white transition">Termos de Uso</a></li>
-                        <li><a href="politica-cookies.html" class="text-gray-400 hover:text-white transition">Política de Cookies</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h3 class="text-lg font-bold mb-4">Newsletter</h3>
-                    <form class="flex">
-                        <input type="email" placeholder="Seu e-mail" class="bg-gray-700 text-white px-4 py-2 rounded-l focus:outline-none focus:ring-2 focus:ring-blue-500 w-full">
-                        <button type="submit" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-r">
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </form>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="#" class="text-sm hover:text-yellow-400 transition">🔒 Política de Privacidade</a>
+                    <a href="#" class="text-sm hover:text-yellow-400 transition">📜 Termos de Uso</a>
+                    <a href="#" class="text-sm hover:text-yellow-400 transition">💸 Política de Reembolso</a>
                 </div>
             </div>
             
-            <div class="border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-400 text-sm text-center w-full">© 2025 Ganhar Dinheiro Online BR. Todos os direitos reservados.</p>
-
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-sm text-gray-400">
+                <p>© 2023 Ganhar Dinheiro Online. Todos os direitos reservados.</p>
+                <p class="mt-2">Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Schema.org Structured Data -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Ganhar Dinheiro Online BR",
-        "url": "https://exemplo.com",
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://exemplo.com/search?q={search_term_string}",
-            "query-input": "required name=search_term_string"
+    <script>
+        // Countdown Timer
+        function startCountdown() {
+            let hours = 1;
+            let minutes = 59;
+            let seconds = 34;
+            
+            const countdownElement = document.getElementById('countdown');
+            
+            const timer = setInterval(() => {
+                seconds--;
+                
+                if (seconds < 0) {
+                    seconds = 59;
+                    minutes--;
+                }
+                
+                if (minutes < 0) {
+                    minutes = 59;
+                    hours--;
+                }
+                
+                if (hours < 0) {
+                    clearInterval(timer);
+                    countdownElement.textContent = "Oferta expirada!";
+                    return;
+                }
+                
+                const formattedHours = hours.toString().padStart(2, '0');
+                const formattedMinutes = minutes.toString().padStart(2, '0');
+                const formattedSeconds = seconds.toString().padStart(2, '0');
+                
+                countdownElement.textContent = `${formattedHours}:${formattedMinutes}:${formattedSeconds}`;
+            }, 1000);
         }
-    }
-    </script>
-    
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Ganhar Dinheiro Online BR",
-        "url": "https://exemplo.com",
-        "logo": "https://exemplo.com/images/logo.png",
-        "sameAs": []
-    }
-    </script>
-    
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [{
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://exemplo.com"
-        }]
-    }
-    </script>
-
-    <!-- Google Analytics -->
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
         
-        ga('create', 'UA-XXXXX-Y', 'auto');
-        ga('send', 'pageview');
-    </script>
-
-    <!-- Mobile Menu Toggle -->
-    <script>
-        document.getElementById('mobile-menu-button').addEventListener('click', function() {
-            const menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
+        // Duplicate countdown function for the second timer
+        function startSecondCountdown() {
+            let hours = 1;
+            let minutes = 59;
+            let seconds = 34;
+            
+            const countdownElement = document.getElementById('countdown2');
+            
+            const timer = setInterval(() => {
+                seconds--;
+                
+                if (seconds < 0) {
+                    seconds = 59;
+                    minutes--;
+                }
+                
+                if (minutes < 0) {
+                    minutes = 59;
+                    hours--;
+                }
+                
+                if (hours < 0) {
+                    clearInterval(timer);
+                    countdownElement.textContent = "Oferta expirada!";
+                    return;
+                }
+                
+                const formattedHours = hours.toString().padStart(2, '0');
+                const formattedMinutes = minutes.toString().padStart(2, '0');
+                const formattedSeconds = seconds.toString().padStart(2, '0');
+                
+                countdownElement.textContent = `${formattedHours}:${formattedMinutes}:${formattedSeconds}`;
+            }, 1000);
+        }
+        
+        // Start countdowns when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            startCountdown();
+            startSecondCountdown();
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
         });
     </script>
 </body>
