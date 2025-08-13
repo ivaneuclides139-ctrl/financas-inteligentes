@@ -18,6 +18,90 @@
 </html>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        /* Notification Styles */
+        .notification-card {
+            border-radius: 8px;
+            padding: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            animation: slideIn 0.5s ease-out forwards;
+            opacity: 0;
+            transform: translateY(100px) rotate(-2deg);
+        }
+
+        .notification-card.fade-out {
+            animation: slideOut 0.5s ease-in forwards;
+        }
+
+        .notification-card.yellow {
+            background-color: #FFD700;
+        }
+
+        .notification-card.orange {
+            background-color: #FFA500;
+        }
+
+        .notification-time {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 3px;
+            background-color: #FF4500;
+            animation: timeProgress 7s linear forwards;
+        }
+
+        .notification-icon {
+            background-color: #32CD32;
+            color: white;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            flex-shrink: 0;
+            font-size: 12px;
+        }
+
+        .notification-content {
+            flex-grow: 1;
+        }
+
+        .notification-product {
+            font-weight: bold;
+        }
+
+        .notification-image {
+            width: 40px;
+            height: 40px;
+            border-radius: 4px;
+            margin-left: 10px;
+            object-fit: cover;
+        }
+
+        @keyframes slideIn {
+            to {
+                opacity: 1;
+                transform: translateY(0) rotate(0);
+            }
+        }
+
+        @keyframes slideOut {
+            to {
+                opacity: 0;
+                transform: translateY(-50px) rotate(2deg);
+            }
+        }
+
+        @keyframes timeProgress {
+            from { width: 100% }
+            to { width: 0% }
+        }
+
         .countdown-box {
             background: linear-gradient(135deg, #f97316, #ef4444);
             animation: pulse 2s infinite;
@@ -353,6 +437,9 @@
         </div>
     </footer>
 
+    <!-- Purchase Notifications Container -->
+    <div id="notifications-container" class="fixed bottom-4 right-4 z-50 w-80 space-y-3"></div>
+
     <script>
         // Countdown Timer
         function startCountdown() {
@@ -430,6 +517,85 @@
             startSecondCountdown();
         });
         
+        // Purchase Notifications
+        const notifications = [
+            { name: "Mariana Souza", product: "Renda Passiva na Internet", image: "https://i.imgur.com/UrFdRJX.png" },
+            { name: "Carlos Pereira", product: "10 Formas de Ganhar Dinheiro no YouTube Sem Aparecer", image: "https://i.imgur.com/ilv2nIR.png" },
+            { name: "Fernanda Lima", product: "Marketing de Afiliados para Iniciantes", image: "https://i.imgur.com/RR9JntW.png" },
+            { name: "Lucas Martins", product: "Renda Passiva na Internet", image: "https://i.imgur.com/UrFdRJX.png" },
+            { name: "Ana Clara Rodrigues", product: "Marketing de Afiliados para Iniciantes", image: "https://i.imgur.com/RR9JntW.png" },
+            { name: "João Henrique Silva", product: "10 Formas de Ganhar Dinheiro no YouTube Sem Aparecer", image: "https://i.imgur.com/ilv2nIR.png" },
+            { name: "Patrícia Gomes", product: "Renda Passiva na Internet", image: "https://i.imgur.com/UrFdRJX.png" },
+            { name: "Bruno Costa", product: "Marketing de Afiliados para Iniciantes", image: "https://i.imgur.com/RR9JntW.png" },
+            { name: "Daniela Santos", product: "10 Formas de Ganhar Dinheiro no YouTube Sem Aparecer", image: "https://i.imgur.com/ilv2nIR.png" },
+            { name: "Guilherme Rocha", product: "Renda Passiva na Internet", image: "https://i.imgur.com/UrFdRJX.png" },
+            { name: "Rafaela Almeida", product: "Marketing de Afiliados para Iniciantes", image: "https://i.imgur.com/RR9JntW.png" },
+            { name: "Tiago Moreira", product: "10 Formas de Ganhar Dinheiro no YouTube Sem Aparecer", image: "https://i.imgur.com/ilv2nIR.png" },
+            { name: "Juliana Barbosa", product: "Renda Passiva na Internet", image: "https://i.imgur.com/UrFdRJX.png" },
+            { name: "Eduardo Fernandes", product: "Marketing de Afiliados para Iniciantes", image: "https://i.imgur.com/RR9JntW.png" },
+            { name: "Beatriz Nogueira", product: "10 Formas de Ganhar Dinheiro no YouTube Sem Aparecer", image: "https://i.imgur.com/ilv2nIR.png" },
+            { name: "Marcelo Farias", product: "Renda Passiva na Internet", image: "https://i.imgur.com/UrFdRJX.png" }
+        ];
+
+        const actions = [
+            "acaba de garantir",
+            "comprou agora",
+            "adquiriu há pouco",
+            "finalizou a compra de"
+        ];
+
+        const times = [
+            "há 1 minuto",
+            "há 2 minutos",
+            "há 3 minutos",
+            "há 5 minutos",
+            "há 7 minutos"
+        ];
+
+        function showNotification() {
+            const container = document.getElementById('notifications-container');
+            
+            // Clear existing notifications
+            container.innerHTML = '';
+            
+            // Decide if we show 1 or 2 notifications (70%/30%)
+            const showDouble = Math.random() < 0.3;
+            const count = showDouble ? 2 : 1;
+            
+            for (let i = 0; i < count; i++) {
+                const randomNotif = notifications[Math.floor(Math.random() * notifications.length)];
+                const randomAction = actions[Math.floor(Math.random() * actions.length)];
+                const randomTime = times[Math.floor(Math.random() * times.length)];
+                const bgColor = Math.random() < 0.5 ? 'yellow' : 'orange';
+                
+                const notification = document.createElement('div');
+                notification.className = `notification-card ${bgColor}`;
+                notification.innerHTML = `
+                    <div class="notification-time"></div>
+                    <div class="notification-icon">✅</div>
+                    <div class="notification-content">
+                        ${randomNotif.name} comprou <span class="notification-product">${randomNotif.product}</span>
+                    </div>
+                    <img src="${randomNotif.image}" alt="${randomNotif.product}" class="notification-image">
+                `;
+                
+                container.appendChild(notification);
+                
+                // Remove notification after 7 seconds
+                setTimeout(() => {
+                    notification.classList.add('fade-out');
+                    setTimeout(() => notification.remove(), 500);
+                }, 7000);
+            }
+            
+            // Schedule next notification (10-15 seconds)
+            const nextDelay = 10000 + Math.random() * 5000;
+            setTimeout(showNotification, nextDelay);
+        }
+
+        // Start notifications after 3 seconds
+        setTimeout(showNotification, 3000);
+
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
